@@ -45,6 +45,24 @@ npm start
 
 The server will start on `http://localhost:3000` (or the port specified in your `.env` file).
 
+## Testing the API
+
+A test script (`test-api.sh`) is provided to demonstrate all API endpoints. To use it:
+
+1. Make sure MongoDB is running
+2. Start the server in one terminal: `npm start`
+3. In another terminal, run the test script: `./test-api.sh`
+
+The script will:
+- Create a user
+- Retrieve users
+- Create a loan for the user
+- Retrieve loans
+- Update both user and loan
+- Delete the created resources
+
+You can also test the API manually using tools like Postman, Insomnia, or curl.
+
 ## API Endpoints
 
 ### Users
